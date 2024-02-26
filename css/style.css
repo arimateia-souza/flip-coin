@@ -1,0 +1,80 @@
+:root{
+    --cor-primaria: #FAE7C9;
+    --cor-secundaria: #706233;
+    --cor-terciaria: #B0926A;
+    --cor--quartearia: #E1C78F;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    background-color: var(--cor-primaria);
+}
+
+.apresentacao {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho, .rodape {
+    padding: 25px;
+    background-color: var(--cor-secundaria);
+    justify-content: space-between;
+    text-align: center;
+}
+
+#imagem {
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.links {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    transition: 1.5s;
+}
+
+#mensagem {
+    color: var(--cor-secundaria);
+}
+#btn {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 0.5px var(--cor-secundaria);
+    border-radius: 15px;
+    padding: 15px;
+    transition: 1s;
+    margin: 25px;
+}
+#btn:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 20px;
+    transition: 1s;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* .devicon-html5-plain colored, .devicon-css3-plain colored,.devicon-javascript-plain colored{
+     width: 1000px; 
+} */
+
+@media (min-width: 800px) {
+    #imagem {
+        padding: 20px;
+        height: 400px;
+        width: 400px;
+    }
+}
